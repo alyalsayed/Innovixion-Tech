@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./timer.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Countdown Timer</h1>
+      <div class="inputs-container">
+        <div>
+          <input type="number" id="day" min="0" value="0" />
+          <p>Days</p>
+        </div>
+        <div>
+          <input type="number" id="hour" min="0" value="0" />
+          <p>Hours</p>
+        </div>
+        <div>
+          <input type="number" id="minute" min="0" max="59" value="0" />
+          <p>Minutes</p>
+        </div>
+        <div>
+          <input type="number" id="seconds" min="0" max="59" value="0" />
+          <p>Seconds</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause" style="display: none">Pause</button>
+        <button id="reset" style="display: none">Reset</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p style="text-align: center">Time is up!</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
